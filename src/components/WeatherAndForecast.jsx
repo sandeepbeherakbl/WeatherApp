@@ -53,7 +53,7 @@ function WeatherAndForecast({ weatherInfo, location, forecast3hrs }) {
           <Weather weatherInfo={weatherInfo} />
         </div>
         <div className="Grafh">
-          <GetGraph forecast3hrs={forecast3hrs}/>
+          {/* <GetGraph forecast3hrs={forecast3hrs}/> */}
           {/* <GetGraph forecast3hrs={this.props.forecast3hrs} /> */}
         </div>
         <div>

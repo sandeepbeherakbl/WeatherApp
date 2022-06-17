@@ -7,7 +7,6 @@ async function getAddressOfCoordinates(lat, lng) {
       params: {
         key: "f8a481e3023649e49b03a49ef761c686",
         q: `${lat}+${lng}`,
-        language: "en"
       }
     }
   );

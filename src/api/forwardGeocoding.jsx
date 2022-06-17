@@ -6,8 +6,7 @@ async function getCoordinatesOfAddress(address) {
     {
       params: {
         key:"f8a481e3023649e49b03a49ef761c686",
-        q: address,
-        language: "en"
+        q: address
       }
     }
   );

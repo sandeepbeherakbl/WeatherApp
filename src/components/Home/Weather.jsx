@@ -5,15 +5,15 @@ import "../styles/Weather.css";
 export default function Current({ weatherInfo, location, date }) {
   return (
     <div className="Weather">
-      <div className="Weather__info">
-        <ul className="Weather__list">
-          <li className="list__temperature">
+      <div className="WeatherInfo">
+        <ul className="WeatherList">
+          <li className="listTemp">
             {Math.round(weatherInfo.current.temp)}
-            <span className="list__temperature-symbol">°C</span>
+            <span className="listTemperatureSymbol">°C</span>
           </li>
         </ul>
         <img
-          className="Weather__icon"
+          className="WeatherIcon"
           src={
             "https://openweathermap.org/img/wn/" +
             weatherInfo.current.weather[0].icon +

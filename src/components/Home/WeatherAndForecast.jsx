@@ -4,7 +4,6 @@ import Forecast from "./Forecast";
 import "../styles/WeatherAndForecast.css";
 import Grafh from "./grafh";
 import Weatherdetail from "./Weatherdetail";
-import GetGraph from "./grafh";
 
 function WeatherAndForecast({ weatherInfo, location, forecast3hrs }) {
   const date = dateBuilder(new Date());
@@ -53,8 +52,7 @@ function WeatherAndForecast({ weatherInfo, location, forecast3hrs }) {
           <Weather weatherInfo={weatherInfo} />
         </div>
         <div className="Grafh">
-          {/* <GetGraph forecast3hrs={forecast3hrs}/> */}
-          {/* <GetGraph forecast3hrs={this.props.forecast3hrs} /> */}
+          
         </div>
         <div>
           <Weatherdetail weatherInfo={weatherInfo}/>

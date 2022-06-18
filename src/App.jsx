@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import Header from "./components/Header";
-import WeatherAndForecast from "./components/WeatherAndForecast";
-import Loader from "./components/Loader";
-import Warning from "./components/Warning";
-import getAddressOfCoordinates from "./api/reverseGeocoding";
-import getCoordinatesOfAddress from "./api/forwardGeocoding";
-import getWeatherAndForecast from "./api/weatherAndForecast";
-import "./styles/App.css";
+import Header from "./components/Home/Header";
+import WeatherAndForecast from "./components/Home/WeatherAndForecast";
+import Loader from "./components/Home/Loader";
+import Warning from "./components/Home/Warning";
+import getAddressOfCoordinates from "./components/api/reverseGeocoding";
+import getCoordinatesOfAddress from "./components/api/forwardGeocoding";
+import getWeatherAndForecast from "./components/api/weatherAndForecast";
+import "./App.css";
 
 function App() {
   const [address, setAddress] = useState("");
@@ -55,7 +55,7 @@ function App() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(makeRequest, catchError);
     } else {
-      alert("Geolocation is not supported by this browser.");
+      alert("Geolocation is not supported.");
     }
   }, []);
 

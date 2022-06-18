@@ -1,10 +1,10 @@
-.Forecast__title {
+.Forecast_title {
   font-size: 14px;
   text-align: center;
   color: black;
 }
 
-.Forecast__weather-icon {
+.Forecast_icon {
   width: 60px;
   height: 60px;
 }
@@ -13,6 +13,20 @@
   border: 3px solid rgb(0, 238, 255);
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.Forecast_temp {
+  display: flex;
+  justify-content: center;
+}
+
+.temp_max {
+  margin-right: 0.2rem;
+  color: #00bfff;
+}
+
+.temp_min {
+  margin-left: 0.2rem;
 }
 
 
@@ -29,18 +43,4 @@
     position: relative;
     top: 0;
   }
-}
-
-.Forecast__temperature {
-  display: flex;
-  justify-content: center;
-}
-
-.temperature__max {
-  margin-right: 0.2rem;
-  color: #f37928;
-}
-
-.temperature__min {
-  margin-left: 0.2rem;
 }
